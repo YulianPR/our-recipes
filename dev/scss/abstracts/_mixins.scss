@@ -1,0 +1,13 @@
+@use './variables';
+
+@mixin respond-to($media) {
+  @media only screen and #{$media} {
+      @content;
+  }
+}
+@mixin set-font($ffamily, $fweight, $fsize, $fcolor:variables.$clr-black){
+    font-family: $ffamily;
+    font-weight: $fweight;
+    font-size: $fsize;
+    color: $fcolor;   
+  }
