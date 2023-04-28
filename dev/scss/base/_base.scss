@@ -1,21 +1,6 @@
 @use'../abstracts/mixins';
 @use'../abstracts/variables';
 
-h1{
-    @include mixins.set-font();
-}
-h2{
-    @include mixins.set-font();
-}
-h3{
-    @include mixins.set-font();
-}
-
-p{
-    @include mixins.set-font();
-}
-
-
 
 
 

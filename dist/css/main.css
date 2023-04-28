@@ -13401,101 +13401,10 @@ img {
   max-width: 100%;
 }
 
-h1 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 700;
-  font-size: 3.438rem;
-  color: hsl(0deg, 0%, 100%);
-}
-
-h2 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 700;
-  font-size: 3.125rem;
-  color: hsl(200deg, 19%, 18%);
-}
-
-h3 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: hsl(200deg, 19%, 18%);
-}
-
-p {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  font-size: 1.563rem;
-  color: hsl(200deg, 19%, 18%);
-}
-
-.psf {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-  color: hsl(36deg, 100%, 50%);
-}
-
 .footer {
   width: 100%;
-  background-color: hsl(36deg, 100%, 50%);
 }
 
-.pf {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
-  font-size: 0.75rem;
-  color: hsl(206deg, 16%, 92%);
-}
-
-.apf {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
-  font-size: 1.25rem;
-  color: hsl(0deg, 0%, 100%);
-}
-
-.pt {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  font-size: 3.125rem;
-  color: hsl(0deg, 0%, 100%);
-}
-
-.btn-search {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: hsl(200deg, 19%, 18%);
-  background-color: hsl(36deg, 100%, 50%);
-  border-radius: 0rem 0.375rem 0.375rem 0rem;
-}
-
-.form-search {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-  color: hsl(200deg, 19%, 18%);
-  width: 100%;
-  background-color: hsl(206deg, 16%, 92%);
-  border-radius: 0.375rem 0rem 0rem 0.375rem;
-  border: none;
-}
-
-.btn-navr {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-  color: hsl(200deg, 19%, 18%);
-  margin: 2rem;
+.header {
   width: 80%;
-  background-color: hsl(206deg, 16%, 92%);
-  border-radius: 1rem;
-}
-.btn-navr:hover {
-  background-color: hsl(36deg, 100%, 50%);
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-  color: hsl(0deg, 0%, 100%);
 }

@@ -1,18 +1,2 @@
 @use'../abstracts/mixins';
 @use'../abstracts/variables';
-
-.btn-search{
-    @include mixins.set-font();
-
-}
-.form-search{
-    @include mixins.set-font();
-   
-}
-.btn-navr{
-    @include mixins.set-font();
-
-    &:hover{
-        @include mixins.set-font();
-    }
-}
