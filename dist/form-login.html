@@ -26,8 +26,16 @@
 </head>
 
 <body>
- <h1 class="logo">Our Recipes</h1>
+ <h1>Our Recipes</h1>
  <h2>Formulario para ingreso a la aplicación</h2>
+
+	<form action="#" method="post" onsubmit="return enviarDatos()">
+		<label for="usuario">Usuario:</label>
+		<input type="text" id="usuario" name="usuario" required><br><br>
+		<label for="contrasena">Contraseña:</label>
+		<input type="password" id="contrasena" name="contrasena" required><br><br>
+		<input type="submit" value="Iniciar sesión">
+	</form>
 </body>
 
 </html>
