@@ -1,0 +1,16 @@
+@use'../abstracts/variables';
+
+.carousel-0 {
+    position: absolute;
+    right: 33%;
+    bottom: 20rem;
+    left: 35%;
+    color: variables.$clr-white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+}
+
