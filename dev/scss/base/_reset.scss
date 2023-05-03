@@ -1,10 +1,11 @@
 @use'../abstracts/variables';
 html{
-    font-size: 14px;
+    font-size: 14px;   
 }
 body{
     max-height: 100vh;
     line-height: 1.2;
+    background-color: variables.$clr-black;
 }
 img{
     display: block;

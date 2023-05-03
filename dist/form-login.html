@@ -8,11 +8,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Marck+Script&family=Open+Sans:wght@300;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Tenor+Sans&display=swap" rel="stylesheet">
   <!-- Google Fonts -->
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
@@ -26,16 +22,20 @@
 </head>
 
 <body>
- <h1>Our Recipes</h1>
- <h2>Formulario para ingreso a la aplicación</h2>
-
-	<form action="#" method="post" onsubmit="return enviarDatos()">
-		<label for="usuario">Usuario:</label>
-		<input type="text" id="usuario" name="usuario" required><br><br>
-		<label for="contrasena">Contraseña:</label>
-		<input type="password" id="contrasena" name="contrasena" required><br><br>
-		<input type="submit" value="Iniciar sesión">
-	</form>
+  <section>
+    <div class="container-form">
+      <!-- los datos se enviarán mediante una solicitud HTTP POST -->
+      <form action="#" method="post" onsubmit="return enviarDatos()">
+        <h1 class="h1-l pb-5">Formulario Login</h1>
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+        <h6 class="small opacity-75">¿Olvido Clave?</h6>
+        <button class="btn btn-dark">Ingresar</button>
+      </form>
+    </div>
+  </section>
 </body>
 
 </html>

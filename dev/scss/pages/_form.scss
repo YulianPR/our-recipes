@@ -1,0 +1,12 @@
+@use'../abstracts/mixins';
+@use'../abstracts/variables';
+
+.h1-l{
+  @include mixins.set-font(variables.$ff, variables.$fw-bold, variables.$fs-lg, variables.$clr-dark);
+}
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

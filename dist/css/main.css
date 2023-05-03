@@ -13394,6 +13394,7 @@ html {
 body {
   max-height: 100vh;
   line-height: 1.2;
+  background-color: #000000;
 }
 
 img {
@@ -13430,4 +13431,24 @@ img {
       -ms-flex-align: center;
           align-items: center;
   height: 33%;
+}
+
+.h1-l {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 4.375rem;
+  color: #2b2a29;
+}
+
+.container-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
 }
