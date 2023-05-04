@@ -1,7 +1,23 @@
 @use'../abstracts/mixins';
 @use'../abstracts/variables';
 
+h1{
+    @include mixins.set-font(variables.$ff, variables.$fw-bold, variables.$fs-xmed, variables.$clr-white);
+}
+h2{
+    @include mixins.set-font(variables.$ff, variables.$fw-bold, variables.$fs-xmed, variables.$clr-white);
+}
+h3{
+    @include mixins.set-font(variables.$ff, variables.$fw-semibold, variables.$fs-med, variables.$clr-white);
 
+}
+h6{
+    @include mixins.set-font(variables.$ff, variables.$fw-semibold, variables.$fs-xxxxsm, variables.$clr-green);
+}
+
+p{
+    @include mixins.set-font(variables.$ff, variables.$fw-regular, variables.$fs-xsm, variables.$clr-dark);
+}
 
 
 

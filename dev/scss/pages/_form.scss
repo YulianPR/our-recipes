@@ -2,7 +2,25 @@
 @use'../abstracts/variables';
 
 .h1-l{
-  @include mixins.set-font(variables.$ff, variables.$fw-bold, variables.$fs-lg, variables.$clr-dark);
+  @include mixins.set-font(variables.$ff, variables.$fw-bold, variables.$fs-lg, variables.$clr-white);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.h1-logo{
+  @include mixins.set-font(variables.$ff-l, variables.$fw-bold, variables.$fs-lg, variables.$clr-gray);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+label{
+  @include mixins.set-font(variables.$ff, variables.$fw-regular, variables.$fs-xsm, variables.$clr-white);
+  border-radius: 0.25rem;
+}
+.input-form{
+  @include mixins.set-font(variables.$ff, variables.$fw-regular, variables.$fs-xsm, variables.$clr-white);
+  width: 100%;
+  height: 4rem;
+  background-color: variables.$clr-gray;
+  border-radius: 0.25rem;
 }
 .container-form {
   display: flex;

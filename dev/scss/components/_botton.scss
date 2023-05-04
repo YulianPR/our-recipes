@@ -1,2 +1,17 @@
 @use'../abstracts/mixins';
 @use'../abstracts/variables';
+
+    .btn-form{
+        @include mixins.set-font(variables.$ff, variables.$fw-semibold, variables.$fs-med, variables.$clr-black);
+        width: 100%;
+        height: 4rem;
+        background-color: variables.$clr-green;
+        border-radius: 0.25rem;
+    }
+    .btn-view{
+        @include mixins.set-font(variables.$ff, variables.$fw-semibold, variables.$fs-xsm, variables.$clr-white);
+        width: 100%;
+        height: 3.4rem;
+        background-color: variables.$clr-green;
+        border-radius: 0rem 0rem 0.5rem 0.5rem ;
+    }

@@ -13402,12 +13402,69 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3.438rem;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3.438rem;
+  color: #ffffff;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 2.125rem;
+  color: #ffffff;
+}
+
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2c7b17;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.563rem;
+  color: #2b2a29;
+}
+
 .footer {
   width: 100%;
 }
 
 .header {
   width: 80%;
+}
+
+.btn-form {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 2.125rem;
+  color: #000000;
+  width: 100%;
+  height: 4rem;
+  background-color: #2c7b17;
+  border-radius: 0.25rem;
+}
+
+.btn-view {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.563rem;
+  color: #ffffff;
+  width: 100%;
+  height: 3.4rem;
+  background-color: #2c7b17;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 .carousel-0 {
@@ -13436,8 +13493,38 @@ img {
 .h1-l {
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 4.375rem;
-  color: #2b2a29;
+  font-size: 4rem;
+  color: #ffffff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.h1-logo {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #65635f;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+label {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.563rem;
+  color: #ffffff;
+  border-radius: 0.25rem;
+}
+
+.input-form {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.563rem;
+  color: #ffffff;
+  width: 100%;
+  height: 4rem;
+  background-color: #65635f;
+  border-radius: 0.25rem;
 }
 
 .container-form {
