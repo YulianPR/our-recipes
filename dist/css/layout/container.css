@@ -1,0 +1,14 @@
+/*screen-sizes*/
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .row {
+    display: -ms-grid;
+    display: grid;
+  }
+}

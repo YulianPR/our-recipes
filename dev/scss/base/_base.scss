@@ -3,6 +3,9 @@
 
 h1{
     @include mixins.set-font(variables.$ff, variables.$fw-bold, variables.$fs-xmed, variables.$clr-white);
+    @include mixins.respond-to(variables.$tablet-landscape){
+        width: 100%;
+    }
 }
 h2{
     @include mixins.set-font(variables.$ff, variables.$fw-bold, variables.$fs-xmed, variables.$clr-white);
@@ -23,6 +26,9 @@ p{
 }
 .img-logo{
     max-width: 15%;
+}
+.img-icon{
+    max-width: 10%;
 }
 
 

@@ -13408,6 +13408,11 @@ h1 {
   font-size: 3.438rem;
   color: #ffffff;
 }
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  h1 {
+    width: 100%;
+  }
+}
 
 h2 {
   font-family: "Inter", sans-serif;
@@ -13446,6 +13451,10 @@ p {
 
 .img-logo {
   max-width: 15%;
+}
+
+.img-icon {
+  max-width: 10%;
 }
 
 .footer {
