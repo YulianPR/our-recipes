@@ -18,6 +18,12 @@ h6{
 p{
     @include mixins.set-font(variables.$ff, variables.$fw-regular, variables.$fs-xsm, variables.$clr-dark);
 }
+.logo{
+    @include mixins.set-font(variables.$ff-l, variables.$fw-semibold, variables.$fs-xmed, variables.$clr-black);
+}
+.img-logo{
+    max-width: 15%;
+}
 
 
 
