@@ -13403,14 +13403,18 @@ img {
 }
 
 h1 {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 3.438rem;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10rem;
   color: #ffffff;
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   h1 {
     width: 100%;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #ffffff;
   }
 }
 
@@ -13447,10 +13451,11 @@ p {
   font-weight: 600;
   font-size: 3.438rem;
   color: #000000;
+  text-decoration: none;
 }
 
 .img-logo {
-  max-width: 15%;
+  max-width: 100%;
 }
 
 .img-icon {

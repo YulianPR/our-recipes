@@ -16,6 +16,7 @@
     integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
     crossorigin="anonymous"></script>
   <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- css -->
   <link rel="stylesheet" href="./css/main.css">
   <!-- css aria-->
@@ -92,16 +93,16 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-
               <div class="col-md-4 d-flex align-items-center">
-                <img src="./img/logo.png" alt="Logo" class="img-logo me-3 ms-5">
-                <h1 class="logo mb-0">OurRecipes</h1>
+                <a class="text-decoration-none d-flex align-items-center" href="index.html">
+                  <img src="./img/Logo-n.png" alt="Logo" class="img-logo me-3 ms-5">
+                  <h1 class="logo mb-0">OurRecipes</h1>
+                </a>
               </div>
               <div class="col-md-4 d-flex align-items-center justify-content-center">
                 <form class="d-flex" role="search">
-                  <input class="me-0" type="search" placeholder="Search recipes" aria-label="Search">
-                  <button class="btn btn-dark" type="submit">Search</button>
+                  <input class="me-0" type="search" placeholder="Search recipes" aria-label="Buscar">
+                  <button class="btn btn-dark" type="submit">Buscar</button>
                 </form>
               </div>
 
@@ -110,9 +111,36 @@
                 <div class="col-md-8 align-content-end">
                   <ul class="navbar-nav  mb-2 mb-lg-0 justify-content-end">
                     <li class="nav-item d-flex ">
-                      <button class="btn btn-nav nav-link ms-0 ps-2 pe-2" aria-current="page">All</button>
-                      <button class="btn btn-nav nav-link ms-0 ps-2 pe-2" aria-current="page">Categories</button>
-                      <button class="btn btn-nav nav-link ms-0 ps-2 pe-2" aria-current="page">Occasions</button>
+
+                    <li class="nav-link">
+                      <a class="nav-link btn btn-nav ms-0 ps-2 pe-2">
+                        Todas
+                      </a>
+                    </li>
+
+                    <li class="dropdown nav-link">
+                      <a class="nav-link dropdown-toggle btn btn-nav ms-0 ps-2 pe-2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Categories
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Almuerzo</a></li>
+                        <li><a class="dropdown-item" href="#">Desayunos</a></li>
+                        <li><a class="dropdown-item" href="#">Postre</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="dropdown nav-link">
+                      <a class="nav-link dropdown-toggle btn btn-nav ms-0 ps-2 pe-2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Occasions
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Cumpleaños</a></li>
+                        <li><a class="dropdown-item" href="#">Dia del niño</a></li>
+                        <li><a class="dropdown-item" href="#">Toda Ocacion</a></li>
+                      </ul>
+                    </li>
 
                   </ul>
                 </div>
@@ -153,9 +181,11 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="./img/plantilla-flat-ori.png" class="d-block w-100" nalt="Welcome">
-              <div class="carousel-0 d-none d-md-block">
-                <h2 class="mb-3">OurRecipes</h2>
-                <p class="h5">Welcome to OurRecipes, a space to view and collect the best recipes</p>
+              <div class="carousel-0 d-md-block">
+                <img src="./img/logo-bg.png" alt="Logo" class="mx-auto img-logo">
+                <h1 class="text-center">OurRecipes</h1>
+                <p class="h5">Welcome to OurRecipes</p>
+                <p class="h5">The 10 most voted recipes</p>
               </div>
             </div>
             <div class="carousel-item">
@@ -260,150 +290,150 @@
 
 
   <!--Recetas-->
-    <section class="row ms-2 me-2">
-      <div class="col-md-4">
-        <div class="card bg-transparent m-5">
-          <img class="card-img-top"
-            src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
-            alt="featured-recipe">
-          <div class="card-body">
-            <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
+  <section class="row ms-2 me-2">
+    <div class="col-md-4">
+      <div class="card bg-transparent m-5">
+        <img class="card-img-top"
+          src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
+          alt="featured-recipe">
+        <div class="card-body">
+          <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
 
-            <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
-            <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
-            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
-              receta</button>
-          </div>
+          <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
+          <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
+          <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
+            receta</button>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card bg-transparent m-5">
-          <img class="card-img-top"
-            src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
-            alt="featured-recipe">
-          <div class="card-body">
-            <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-transparent m-5">
+        <img class="card-img-top"
+          src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
+          alt="featured-recipe">
+        <div class="card-body">
+          <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
 
-            <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
-            <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
-            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
-              receta</button>
-          </div>
+          <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
+          <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
+          <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
+            receta</button>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card bg-transparent m-5">
-          <img class="card-img-top"
-            src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
-            alt="featured-recipe">
-          <div class="card-body">
-            <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-transparent m-5">
+        <img class="card-img-top"
+          src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
+          alt="featured-recipe">
+        <div class="card-body">
+          <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
 
-            <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
-            <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
-            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
-              receta</button>
-          </div>
+          <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
+          <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
+          <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
+            receta</button>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card bg-transparent m-5">
-          <img class="card-img-top"
-            src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
-            alt="featured-recipe">
-          <div class="card-body">
-            <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-transparent m-5">
+        <img class="card-img-top"
+          src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
+          alt="featured-recipe">
+        <div class="card-body">
+          <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
 
-            <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
-            <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
-            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
-              receta</button>
-          </div>
+          <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
+          <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
+          <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
+            receta</button>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card bg-transparent m-5">
-          <img class="card-img-top"
-            src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
-            alt="featured-recipe">
-          <div class="card-body">
-            <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-transparent m-5">
+        <img class="card-img-top"
+          src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
+          alt="featured-recipe">
+        <div class="card-body">
+          <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
 
-            <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
-            <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
-            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
-              receta</button>
-          </div>
+          <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
+          <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
+          <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
+            receta</button>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card bg-transparent m-5">
-          <img class="card-img-top"
-            src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
-            alt="featured-recipe">
-          <div class="card-body">
-            <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-transparent m-5">
+        <img class="card-img-top"
+          src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
+          alt="featured-recipe">
+        <div class="card-body">
+          <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
 
-            <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
-            <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
-            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
-              receta</button>
-          </div>
+          <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
+          <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
+          <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
+            receta</button>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card bg-transparent m-5">
-          <img class="card-img-top"
-            src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
-            alt="featured-recipe">
-          <div class="card-body">
-            <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-transparent m-5">
+        <img class="card-img-top"
+          src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
+          alt="featured-recipe">
+        <div class="card-body">
+          <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
 
-            <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
-            <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
-            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
-              receta</button>
-          </div>
+          <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
+          <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
+          <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
+            receta</button>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card bg-transparent m-5">
-          <img class="card-img-top"
-            src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
-            alt="featured-recipe">
-          <div class="card-body">
-            <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-transparent m-5">
+        <img class="card-img-top"
+          src="./img/fotos/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table-min.jpg"
+          alt="featured-recipe">
+        <div class="card-body">
+          <h3 class="text-center">Hamburguesa grande con carne y queso extra</h3>
 
-            <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
-            <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
-            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
-              receta</button>
-          </div>
+          <p class="card-text text-center mt-4 mb-0">Tiempo total: 20min</p>
+          <p class="card-text text-center mt-0 mb-4">Porciones: 10</p>
+          <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la
+            receta</button>
         </div>
       </div>
-    </section>
-    <!--/Recetas-->
-    <!--Footer-->
-    <footer class="bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 d-flex align-items-center">
-            <img src="./img/logo.png" alt="Logo" class="img-logo me-3 ms-5">
-            <h1 class="logo mb-0">OurRecipes</h1>
-          </div>
-          <div class="col-md-4 text-center align-content-end">
-            <hr>
-            <p>2023. OurRecipes. Todos los derechos recervados </p>
-          </div>
-          <div class="col-md-12 d-flex justify-content-end ms-5 ">
-            <img class="img-icon me-0 mt-4" src="./img/facebook.png" alt="Facebook" href="#">
-            <img class="img-icon me-0 mt-4" src="./img/twitter.png" alt="Twitter" href="#">
-            <img class="img-icon me-0 mt-4" src="./img/instagram.png" alt="Instagram" href="#">
-          </div>
+    </div>
+  </section>
+  <!--/Recetas-->
+  <!--Footer-->
+  <footer class="bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 d-flex align-items-center">
+          <img src="./img/Logo-np.png" alt="Logo" class="img-logo me-3 ms-5">
+          <h1 class="logo mb-0">OurRecipes</h1>
+        </div>
+        <div class="col-md-4 text-center align-content-end">
+          <hr>
+          <p>2023. OurRecipes. Todos los derechos recervados </p>
+        </div>
+        <div class="col-md-12 d-flex justify-content-end ms-5 ">
+          <img class="img-icon me-0 mt-4" src="./img/facebook.png" alt="Facebook" href="#">
+          <img class="img-icon me-0 mt-4" src="./img/twitter.png" alt="Twitter" href="#">
+          <img class="img-icon me-0 mt-4" src="./img/instagram.png" alt="Instagram" href="#">
         </div>
       </div>
-    </footer>
-      <!--/Footer-->
+    </div>
+  </footer>
+  <!--/Footer-->
 
 
 </body>
