@@ -15,6 +15,9 @@ h3{
     @include mixins.set-font(variables.$ff, variables.$fw-semibold, variables.$fs-med, variables.$clr-white);
 
 }
+h4{
+    @include mixins.set-font(variables.$ff, variables.$fw-regular, variables.$fs-xsm, variables.$clr-white);
+}
 h6{
     @include mixins.set-font(variables.$ff, variables.$fw-semibold, variables.$fs-xxxxsm, variables.$clr-green);
 }
