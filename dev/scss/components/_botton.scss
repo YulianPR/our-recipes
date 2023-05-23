@@ -18,3 +18,14 @@
     .btn-nav{
         @include mixins.set-font(variables.$ff, variables.$fw-regular, variables.$fs-xxxsm, variables.$clr-black);   
     }
+    .btn-card{
+        @include mixins.set-font(variables.$ff, variables.$fw-semibold, variables.$fs-xxsm, variables.$clr-black);
+        background-color: variables.$clr-white;
+        border-radius: 0.5rem;
+        width: 80%;
+        height: 3rem;
+        @include mixins.respond-to(variables.$phone){
+            width: 100%;
+        }
+       
+    }

@@ -1,0 +1,17 @@
+@use'../abstracts/variables';
+@use'../abstracts/mixins';
+
+.container{
+    display: grid;
+}
+.row{    
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mixins.respond-to(variables.$phone){
+        display: grid;
+    }
+}
+.col{
+    flex: 1 0 0%;
+}

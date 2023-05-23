@@ -13408,7 +13408,7 @@ h1 {
   font-size: 10rem;
   color: #ffffff;
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (max-width: 767px) {
   h1 {
     width: 100%;
     font-family: "Tenor Sans", sans-serif;
@@ -13458,15 +13458,18 @@ p {
   font-weight: 600;
   font-size: 3.438rem;
   color: #000000;
-  text-decoration: none;
 }
 
 .img-logo {
-  max-width: 100%;
+  max-width: 70%;
 }
 
 .img-icon {
   max-width: 10%;
+}
+
+.img-user {
+  max-width: 50%;
 }
 
 .footer {
@@ -13504,6 +13507,22 @@ p {
   font-weight: 400;
   font-size: 1.25rem;
   color: #000000;
+}
+
+.btn-card {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.375rem;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  width: 80%;
+  height: 3rem;
+}
+@media only screen and (max-width: 767px) {
+  .btn-card {
+    width: 100%;
+  }
 }
 
 .carousel-0 {
@@ -13588,6 +13607,14 @@ label {
   background-color: #65635f;
   margin-left: 4.3rem;
   border-radius: 0.5rem;
+}
+@media only screen and (max-width: 767px) {
+  .card-user {
+    display: block;
+    margin: 1rem auto;
+    width: 80%;
+    text-align: center;
+  }
 }
 
 .info-user {

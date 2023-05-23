@@ -8,6 +8,12 @@
     background-color: variables.$clr-gray;
     margin-left: 4.3rem;
     border-radius: 0.5rem;
+    @include mixins.respond-to(variables.$phone){
+      display: block;
+      margin: 1rem auto;
+      width: 80%;
+      text-align: center;
+  }
 }
 .info-user{
     @include mixins.set-font(variables.$ff, variables.$fw-bold, variables.$fs-med, variables.$clr-white);
