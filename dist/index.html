@@ -49,8 +49,8 @@
 
               <div class="col-md-4 d-flex align-items-center justify-content-center">
                 <form class="d-flex" role="search">
-                  <input class="me-0" type="search" placeholder="Search recipes" aria-label="Buscar">
-                  <button class="btn btn-dark" type="submit">Buscar</button>
+                  <button class="btn btn-buscar d-flex align-items-center" type="submit">Buscar</button>
+                  <input class="me-0 h2" type="search" placeholder="................" aria-label="Buscar">                 
                 </form>
               </div>
 
@@ -69,33 +69,49 @@
                     <li class="dropdown nav-link">
                       <a class="nav-link dropdown-toggle btn btn-nav ms-0 ps-2 pe-2" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Categories
+                        Categorias
                       </a>
+                
                       <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#todas">Desayuno</a></li>
+                        <li><a class="dropdown-item" href="#todas">Bebidas</a></li>
+                        <li><a class="dropdown-item" href="#todas">Entradas</a></li>
                         <li><a class="dropdown-item" href="#todas">Almuerzo</a></li>
-                        <li><a class="dropdown-item" href="#todas">Desayunos</a></li>
-                        <li><a class="dropdown-item" href="#todas">Postre</a></li>
+                        <li><a class="dropdown-item" href="#todas">Postres</a></li>
+                        <li><a class="dropdown-item" href="#todas">Sopas</a></li>
                       </ul>
                     </li>
 
                     <li class="dropdown nav-link">
                       <a class="nav-link dropdown-toggle btn btn-nav ms-0 ps-2 pe-2" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Occasions
+                        Ocasiones
                       </a>
                       <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#todas">Todas las Ocasiones</a></li>
                         <li><a class="dropdown-item" href="#todas">Cumpleaños</a></li>
-                        <li><a class="dropdown-item" href="#todas">Dia del niño</a></li>
-                        <li><a class="dropdown-item" href="#todas">Ocacion</a></li>
-                        <li><a class="dropdown-item" href="#todas">Ocacion</a></li>
-                        <li><a class="dropdown-item" href="#todas">Ocacion</a></li>
+                        <li><a class="dropdown-item" href="#todas">Día del padre</a></li>
+                        <li><a class="dropdown-item" href="#todas">Día de la madre</a></li>
+                        <li><a class="dropdown-item" href="#todas">Día del niño</a></li>
+                        <li><a class="dropdown-item" href="#todas">Navidad</a></li>
+                        <li><a class="dropdown-item" href="#todas">Semana Santa</a></li>
+                        <li><a class="dropdown-item" href="#todas">Verano</a></li>
                       </ul>
                     </li>
 
                   </ul>
                 </div>
                 <div class="col-md-4">
-                  <img src="./img/Foto-user.png" alt="foto" class="img-fluid mx-auto img-user">
+                  <li class="dropdown nav-link">
+                    <a class="nav-link dropdown-toggle btn btn-nav ms-0 ps-2 pe-2" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <img src="./img/Foto-user.png" alt="foto" class="img-fluid mx-auto img-user">
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#todas">Ingresar</a></li>
+                      <li><a class="dropdown-item" href="#todas">Registrarse</a></li>
+                    </ul>
+                  </li>
                 </div>
               </div>
             </div>
@@ -104,7 +120,6 @@
       <!--/Navegador-->
 
       <!--Modal-->
-
       <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">

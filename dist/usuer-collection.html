@@ -24,82 +24,104 @@
 <body>
     <header>
      <!--Navegador-->
-     <div class="row">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary mt-1 ">
-          <div class="container-fluid w-100">
+     <div>
+      <nav class="navbar navbar-expand-md bg-body-tertiary mt-1">
+        <div class="container-fluid">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="col-md-4 d-flex align-items-center">
+            <a class="text-decoration-none d-flex align-items-center" href="index.html">
+              <div class=" d-flex align-items-center">
+                <img src="./img/Logo-n.png" alt="Logo" class="img-fluid mx-auto img-logo  me-3 ms-5">
 
-
-              <div class="col-md-4 d-flex align-items-center">
-                <a class="text-decoration-none d-flex align-items-center" href="index.html">
-                  <img src="./img/Logo-n.png" alt="Logo" class="img-logo me-3 ms-5">
-                  <h1 class="logo mb-0">OurRecipes</h1>
-                </a>
               </div>
-              <div class="col-md-4 d-flex align-items-center justify-content-center">
-                <form class="d-flex" role="search">
-                  <input class="me-0" type="search" placeholder="Search recipes" aria-label="Buscar">
-                  <button class="btn btn-dark" type="submit">Buscar</button>
-                </form>
+              <h1 class="logo mb-0">OurRecipes</h1>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+              <form class="d-flex" role="search">
+                <button class="btn btn-buscar d-flex align-items-center" type="submit">Buscar</button>
+                <input class="me-0 h2" type="search" placeholder="................" aria-label="Buscar">                 
+              </form>
+            </div>
+
+
+            <div class="row d-flex align-items-center justify-content-center">
+              <div class="col-md-8 align-content-end">
+                <ul class="navbar-nav  mb-2 mb-lg-0 justify-content-end">
+                  
+
+                  <li class="nav-link">
+                    <a class="nav-link btn btn-nav ms-0 ps-2 pe-2" href="#todas">
+                      Todas
+                    </a>
+                  </li>
+
+                  <li class="dropdown nav-link">
+                    <a class="nav-link dropdown-toggle btn btn-nav ms-0 ps-2 pe-2" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Categorias
+                    </a>
+              
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#todas">Desayuno</a></li>
+                      <li><a class="dropdown-item" href="#todas">Bebidas</a></li>
+                      <li><a class="dropdown-item" href="#todas">Entradas</a></li>
+                      <li><a class="dropdown-item" href="#todas">Almuerzo</a></li>
+                      <li><a class="dropdown-item" href="#todas">Postres</a></li>
+                      <li><a class="dropdown-item" href="#todas">Sopas</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown nav-link">
+                    <a class="nav-link dropdown-toggle btn btn-nav ms-0 ps-2 pe-2" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Ocasiones
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#todas">Todas las Ocasiones</a></li>
+                      <li><a class="dropdown-item" href="#todas">Cumpleaños</a></li>
+                      <li><a class="dropdown-item" href="#todas">Día del padre</a></li>
+                      <li><a class="dropdown-item" href="#todas">Día de la madre</a></li>
+                      <li><a class="dropdown-item" href="#todas">Día del niño</a></li>
+                      <li><a class="dropdown-item" href="#todas">Navidad</a></li>
+                      <li><a class="dropdown-item" href="#todas">Semana Santa</a></li>
+                      <li><a class="dropdown-item" href="#todas">Verano</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
               </div>
-
-
-              <div class="row col-md-4 d-flex align-items-center">
-                <div class="col-md-8 align-content-end">
-                  <ul class="navbar-nav  mb-2 mb-lg-0 justify-content-end">
-                    <li class="nav-item d-flex ">
-
-                      <li class="nav-link">
-                        <a class="nav-link btn btn-nav ms-0 ps-2 pe-2">
-                          Todas
-                        </a>
-                      </li>
-                      
-                      <li class="dropdown nav-link">
-                        <a class="nav-link dropdown-toggle btn btn-nav ms-0 ps-2 pe-2" data-bs-toggle="dropdown" aria-expanded="false">
-                          Categories
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Almuerzo</a></li>
-                          <li><a class="dropdown-item" href="#">Desayunos</a></li>
-                          <li><a class="dropdown-item" href="#">Postre</a></li>
-                        </ul>
-                      </li>
-
-                      <li class="dropdown nav-link">
-                        <a class="nav-link dropdown-toggle btn btn-nav ms-0 ps-2 pe-2" data-bs-toggle="dropdown" aria-expanded="false">
-                          Occasions
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Cumpleaños</a></li>
-                          <li><a class="dropdown-item" href="#">Dia del niño</a></li>
-                          <li><a class="dropdown-item" href="#">Toda Ocacion</a></li>
-                        </ul>
-                      </li>
-
+              <div class="col-md-4">
+                <li class="dropdown nav-link">
+                  <a class="nav-link dropdown-toggle btn btn-nav ms-0 ps-2 pe-2" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="./img/Foto-user.png" alt="foto" class="img-fluid mx-auto img-user">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#todas">Ingresar</a></li>
+                    <li><a class="dropdown-item" href="#todas">Registrarse</a></li>
                   </ul>
-                </div>
-                <div class="col-md-4">
-                  <img src="./img/Foto-user.png" alt="" class="img-fluid mx-auto " style="max-width: 55%;">
-                </div>
+                </li>
               </div>
             </div>
-        </nav>
-      </div>
-      <!--/Navegador--> 
+          </div>
+      </nav>
+    </div>
+    <!--/Navegador-->
     
     </header>
 
     <section>
-        <h1 class="text-center m-5 ">Perfil de Usuario</h1>
-        <section class="">
-            <div class="card-user row ms-3 me-2">
+      <div>
+        <h2 class="text-center m-5 pt-4">Perfil de Usuario</h2> 
+            <div class="card-user row">
                 <div class="col-md-4 ps-2">
                     <img class="card-img-top m-5" src="./img/Foto-user.png" alt="featured-recipe">
                 </div>
@@ -114,15 +136,11 @@
                 </div>
                 <div class="col-md-3 d-flex flex-column justify-content-center mt-5">
                     <div class="pt-5 mt-3">
-                        <p class="info-user mt-5">Guardadas: 7</p>
+                        <p class="info-user mt-5">Recetas Guardadas</p>
                     </div>
                 </div>
             </div>
-        </section>
-
-
-
-
+      </div>
     </section>
     <h2 class="text-center">Coleccion de usuario</h2>
 

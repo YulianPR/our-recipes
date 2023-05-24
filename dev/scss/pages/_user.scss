@@ -3,10 +3,24 @@
 
 .card-user{
     display: flex;
-    width: 94%;
+    align-items: center;
     height: 100%;
-    background-color: variables.$clr-gray;
-    margin-left: 4.3rem;
+    background-color: variables.$clr-dark;
+    margin: 5rem;
+    border-radius: 0.5rem;
+    @include mixins.respond-to(variables.$phone){
+      display: block;
+      margin: 1rem auto;
+      width: 80%;
+      text-align: center;
+  }
+}
+.card-tabla{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: variables.$clr-dark;
+    margin: 5rem;
     border-radius: 0.5rem;
     @include mixins.respond-to(variables.$phone){
       display: block;

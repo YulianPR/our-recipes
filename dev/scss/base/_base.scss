@@ -26,12 +26,20 @@ h6{
 p{
     @include mixins.set-font(variables.$ff, variables.$fw-regular, variables.$fs-xsm, variables.$clr-dark);
 }
+th{
+    @include mixins.set-font(variables.$ff, variables.$fw-regular, variables.$fs-med, variables.$clr-white);
+
+}
+tr{
+    @include mixins.set-font(variables.$ff, variables.$fw-regular, variables.$fs-med, variables.$clr-white);
+
+}
 .logo{
     @include mixins.set-font(variables.$ff-l, variables.$fw-semibold, variables.$fs-xmed, variables.$clr-black);
    
 }
 .img-logo{
-    max-width: 70%;
+    max-width: 71%;
 }
 
 

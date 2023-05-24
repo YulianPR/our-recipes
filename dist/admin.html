@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+    <!-- Google Fonts -->
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap -->
+    
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- css -->
+    <title>Our Recipes</title>
+</head>
+
+<body>
+    <header>
+     <!--Navegador-->
+     <div>
+      <nav class="navbar navbar-expand-md bg-body-tertiary mt-1">
+        <div class="container-fluid">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="col-md-4 d-flex align-items-center">
+            <a class="text-decoration-none d-flex align-items-center" href="index.html">
+              <div class=" d-flex align-items-center">
+                <img src="./img/Logo-n.png" alt="Logo" class="img-fluid mx-auto img-logo  me-3 ms-5">
+
+              </div>
+              <h1 class="logo mb-0">OurRecipes</h1>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+              <form class="d-flex" role="search">
+                <button class="btn btn-buscar d-flex align-items-center" type="submit">Buscar</button>
+                <input class="me-0 h2" type="search" placeholder="................" aria-label="Buscar">                 
+              </form>
+            </div>
+
+
+            <div class="row d-flex align-items-center justify-content-center">
+              <div class="col-md-8 align-content-end">
+                <ul class="navbar-nav  mb-2 mb-lg-0 justify-content-end">
+                  
+
+                  <li class="nav-link">
+                    <a class="nav-link btn btn-nav ms-0 ps-2 pe-2" href="#todas">
+                      Todas
+                    </a>
+                  </li>
+
+                  <li class="dropdown nav-link">
+                    <a class="nav-link dropdown-toggle btn btn-nav ms-0 ps-2 pe-2" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Categorias
+                    </a>
+              
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#todas">Desayuno</a></li>
+                      <li><a class="dropdown-item" href="#todas">Bebidas</a></li>
+                      <li><a class="dropdown-item" href="#todas">Entradas</a></li>
+                      <li><a class="dropdown-item" href="#todas">Almuerzo</a></li>
+                      <li><a class="dropdown-item" href="#todas">Postres</a></li>
+                      <li><a class="dropdown-item" href="#todas">Sopas</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown nav-link">
+                    <a class="nav-link dropdown-toggle btn btn-nav ms-0 ps-2 pe-2" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Ocasiones
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#todas">Todas las Ocasiones</a></li>
+                      <li><a class="dropdown-item" href="#todas">Cumpleaños</a></li>
+                      <li><a class="dropdown-item" href="#todas">Día del padre</a></li>
+                      <li><a class="dropdown-item" href="#todas">Día de la madre</a></li>
+                      <li><a class="dropdown-item" href="#todas">Día del niño</a></li>
+                      <li><a class="dropdown-item" href="#todas">Navidad</a></li>
+                      <li><a class="dropdown-item" href="#todas">Semana Santa</a></li>
+                      <li><a class="dropdown-item" href="#todas">Verano</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <li class="dropdown nav-link">
+                  <a class="nav-link dropdown-toggle btn btn-nav ms-0 ps-2 pe-2" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="./img/Foto-user.png" alt="foto" class="img-fluid mx-auto img-user">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#todas">Ingresar</a></li>
+                    <li><a class="dropdown-item" href="#todas">Registrarse</a></li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </div>
+      </nav>
+    </div>
+    <!--/Navegador-->
+    </header>
+
+    <section>
+        <div>
+            <h2 class="text-center m-5 pt-4">Perfil de Administrador</h2>
+                <div class="card-user row">
+                    <div class="col-md-4 ps-2">
+                        <img class="card-img-top m-5" src="./img/Foto-user.png" alt="featured-recipe">
+                    </div>
+                    <div class="col-md-5 pt-5">
+                        <div class="m-5">
+                            <div class="ms-5 mt-5 pt-3">
+                                <p class="info-user card-text pt-5 mb-5">Nombre: </p>
+                                <p class="info-user card-text mt-0 mb-5">Correo: </p>
+                                <p class="info-user card-text mt-0 mb-5">Ususrio: </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex flex-column justify-content-center mt-5">
+                        <div class="pt-5 mt-3">
+                            <p class="info-user mt-5">Guardadas: 7</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!--/Tabla-->
+
+    <h2 class="text-center m-5 pt-4">Administracion de Recetas</h2>
+
+            <div class="card-tabla">
+                
+                <table class="table">
+                  <thead class="table-dark">
+                    <tr>
+                      <th class="text-center">IMG</th>
+                      <th class="text-center">Nombre</th>
+                      <th class="text-center">Categoria</th>
+                      <th class="text-center">Tiem.Prep</th>
+                      <th class="text-center">TiempCoc</th>
+                      <th class="text-center">Tiem.Total</th>
+                      <th class="text-center">X</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                      <td class="text-center">...</td>
+                    </tr>                    
+                  </tbody>
+                </table>
+              </div>
+            <!--/Tabla-->
+                <!--/Tabla-->
+
+    <h2 class="text-center m-5 pt-4">Administracion de Recetas</h2>
+
+    <div class="card-tabla">
+        
+        <table class="table">
+          <thead class="table-dark">
+            <tr>
+              <th class="text-center">Foto</th>
+              <th class="text-center">Nombre</th>
+              <th class="text-center">Correo</th>
+              <th class="text-center">Usuario</th>
+              <th class="text-center">Recetas</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+
+            </tr>
+            <tr>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+
+            </tr>
+            <tr>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+>
+            </tr>
+            <tr>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+
+            </tr>
+            <tr>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+
+            </tr>
+            <tr>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+
+            </tr>
+            <tr>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+
+            </tr>
+            <tr>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+              <td class="text-center">...</td>
+
+            </tr>                   
+          </tbody>
+        </table>
+      </div>
+    <!--/Tabla-->
+
+        <!--Footer-->
+        <footer class="bg-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="./img/Logo-np.png" alt="Logo" class="img-logo me-3 ms-5">
+                  <h1 class="logo mb-0">OurRecipes</h1>
+                </div>
+                <div class="col-md-4 text-center align-content-end">
+                  <hr>
+                  <p>2023. OurRecipes. Todos los derechos recervados </p>
+                </div>
+                <div class="col-md-12 d-flex justify-content-end me-5 ">
+                  <img class="img-icon me-0 mt-4" src="./img/facebook.png" alt="Facebook" href="#">
+                  <img class="img-icon me-0 mt-4" src="./img/twitter.png" alt="Twitter" href="#">
+                  <img class="img-icon me-0 mt-4" src="./img/instagram.png" alt="Instagram" href="#">
+                </div>
+              </div>
+            </div>
+          </footer>
+            <!--/Footer-->
+
+</body>
+
+</html>

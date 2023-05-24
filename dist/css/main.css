@@ -13450,7 +13450,21 @@ p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.563rem;
-  color: #2b2a29;
+  color: #1E1E1E;
+}
+
+th {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2.125rem;
+  color: #ffffff;
+}
+
+tr {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2.125rem;
+  color: #ffffff;
 }
 
 .logo {
@@ -13461,7 +13475,7 @@ p {
 }
 
 .img-logo {
-  max-width: 70%;
+  max-width: 71%;
 }
 
 .img-icon {
@@ -13507,6 +13521,7 @@ p {
   font-weight: 400;
   font-size: 1.25rem;
   color: #000000;
+  text-decoration: none;
 }
 
 .btn-card {
@@ -13525,8 +13540,19 @@ p {
   }
 }
 
+.btn-buscar {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2.125rem;
+  color: #000000;
+  width: 100%;
+  height: 3rem;
+  background-color: none;
+  border: none;
+}
+
 .carousel-0 {
-  position: absolute;
+  position: relative;
   right: 33%;
   bottom: 20rem;
   left: 35%;
@@ -13602,14 +13628,37 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 94%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
-  background-color: #65635f;
-  margin-left: 4.3rem;
+  background-color: #1E1E1E;
+  margin: 5rem;
   border-radius: 0.5rem;
 }
 @media only screen and (max-width: 767px) {
   .card-user {
+    display: block;
+    margin: 1rem auto;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.card-tabla {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-color: #1E1E1E;
+  margin: 5rem;
+  border-radius: 0.5rem;
+}
+@media only screen and (max-width: 767px) {
+  .card-tabla {
     display: block;
     margin: 1rem auto;
     width: 80%;
