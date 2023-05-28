@@ -3,10 +3,14 @@
 
 h1{
     @include mixins.set-font(variables.$ff-l, variables.$fw-regular, variables.$fs-lgp, variables.$clr-white);
-    
+
+    margin-top: 0rem;
     @include mixins.respond-to(variables.$phone){
-        width: 100%;
-        @include mixins.set-font(variables.$ff-l, variables.$fw-bold, variables.$fs-lg, variables.$clr-white);
+        @include mixins.set-font(variables.$ff-l, variables.$fw-bold, variables.$fs-med, variables.$clr-white);
+        padding-bottom: .5rem;
+        margin-bottom: .5rem;
+        margin-top: 0rem;
+
     }
 }
 h2{
@@ -14,7 +18,10 @@ h2{
 }
 h3{
     @include mixins.set-font(variables.$ff, variables.$fw-semibold, variables.$fs-med, variables.$clr-white);
-
+    @include mixins.respond-to(variables.$phone){
+        @include mixins.set-font(variables.$ff-l, variables.$fw-regular, variables.$fs-xsm, variables.$clr-white);
+       
+    }
 }
 h4{
     @include mixins.set-font(variables.$ff, variables.$fw-regular, variables.$fs-xsm, variables.$clr-white);
@@ -36,10 +43,17 @@ tr{
 }
 .logo{
     @include mixins.set-font(variables.$ff-l, variables.$fw-semibold, variables.$fs-xmed, variables.$clr-black);
-   
+
 }
 .img-logo{
     max-width: 71%;
+}
+
+.img-logo-p{
+    max-width: 71%;
+    @include mixins.respond-to(variables.$phone){
+        width: 20%;
+    }
 }
 
 
