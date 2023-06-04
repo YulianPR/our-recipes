@@ -1,13 +1,9 @@
 @use'../abstracts/mixins';
 @use'../abstracts/variables';
 
-.h1-l{
-  @include mixins.set-font(variables.$ff, variables.$fw-bold, variables.$fs-lg, variables.$clr-white);
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
+
 .h1-logo{
-  @include mixins.set-font(variables.$ff-l, variables.$fw-bold, variables.$fs-lg, variables.$clr-gray);
+  @include mixins.set-font(variables.$ff-l, variables.$fw-regular, variables.$fs-lg, variables.$clr-white);
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -27,4 +23,5 @@ label{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100vw;
 }

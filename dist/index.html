@@ -46,9 +46,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
             <div class="col-md-4 d-flex align-items-center justify-content-center">
-              <form class="d-flex" role="search">
-                <button class="btn btn-buscar d-flex align-items-center" type="submit">Buscar</button>
-                <input class="me-0 h2" type="search" placeholder="................" aria-label="Buscar">
+              <form class="d-flex" role="search" @submit.prevent="searchRecipe">
+                <button class="btn btn-buscar d-flex align-items-center" v-on:click="onClickSearch(Keyword)" type="submit">Buscar</button>
+                <input class="me-0 h2" type="search" v-model="Keyword" placeholder="......" aria-label="Buscar">
               </form>
             </div>
 
@@ -72,8 +72,8 @@
 
                     <ul class="dropdown-menu">
                       <li v-for="(category, index) in categories">
-                       
-                        <recipe-category :name="category.name" v-on:selectedcategory="onClickSelectedCategory"> </recipe-category>
+                        <recipe-category :name="category.name" v-on:selectedcategory="onClickSelectedCategory">
+                        </recipe-category>
 
                       </li>
                     </ul>
@@ -115,6 +115,7 @@
 
     <Section class="mb-5">
       <div id="carouselExampleCaptions" class="carousel slide">
+       <!-- 
         <div class="carousel-indicators align-items-center">
 
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -124,9 +125,10 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
 
-        </div>
+        </div> 
+      -->
 
-        <div class="carousel-inner">
+        <div  class="carousel-inner">
 
           <div class="carousel-item active">
             <img src="./img/plantilla-flat-ori.png" class="d-block w-100" alt="Welcome">
@@ -138,33 +140,17 @@
               <h3 class="pb-5">Nuestras 10 recetas preferidas</h3>
             </div>
           </div>
-
-          <div class="carousel-item">
-            <img src="./img/fotos/mexican-tacos-with-beef-in-tomato-sauce-and-salsa-min.jpg" class="d-block w-100"
-              data-bs-toggle="modal" data-bs-target="#staticBackdrop" alt="Tacos">
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Tacos</h2>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="./img/fotos/baked-chicken-wings-in-the-asian-style-min.jpg" class="d-block w-100"
-              data-bs-toggle="modal" data-bs-target="#staticBackdrop" alt="chicken">
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Chickennnn</h2>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
+          
+          <recipe-carousel v-for="(item, index) in recipes" :image="item.image" :name="item.name" :description="item.instructions"></recipe-carousel>
 
         </div>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev">
-          <span class="carousel-control-prev-icon fa-lg" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        <button class="carousel-control-next btn-lg" type="button" data-bs-target="#carouselExampleCaptions"
           data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
@@ -175,61 +161,68 @@
 
     <!--10/recetas-->
 
+    <!--modal-->
+    <recipe-details></recipe-details>
+    <!--modal-->
+
     <!--recetas-->
     <section class="row ms-2 me-2">
       <h2 id="todas" class="pt-4 pb-0 text-center">Todas las Recetas</h2>
       <div v-for="(item, index) in recipes" class="col-md-4">
 
         <recipe-card :image="item.image" :category="item.category" :name="item.name" :description="item.instructions"
-          :time="item.time" :level="item.level" :likes="item.likes" :index="item.id" :saves="item.saves" :index="item.id" :portions="item.portions"></recipe-card>
+          :time="item.time" :level="item.level" :likes="item.likes" :index="item.id" :saves="item.saves"
+          :index="item.id" :portions="item.portions"></recipe-card>
 
       </div>
     </section>
     <!--recetas-->
 
 
-    <!--Footer-->
-    <footer class="bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 d-flex align-items-center">
-            <img src="./img/Logo-np.png" alt="Logo" class="img-logo me-3 ms-5">
-            <h1 class="logo mb-0">OurRecipes</h1>
-          </div>
-          <div class="col-md-4 text-center align-content-end">
-            <hr>
-            <p>2023. OurRecipes. Todos los derechos recervados </p>
-          </div>
-          <div class="col-md-12 d-flex justify-content-end ms-5 ">
-            <img class="img-icon me-0 mt-4" src="./img/facebook.png" alt="Facebook" href="#">
-            <img class="img-icon me-0 mt-4" src="./img/twitter.png" alt="Twitter" href="#">
-            <img class="img-icon me-0 mt-4" src="./img/instagram.png" alt="Instagram" href="#">
-          </div>
-        </div>
+<!--Footer-->
+<footer class="bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 d-flex align-items-center">
+        <img src="./img/Logo-np.png" alt="Logo" class="img-logo me-3 ms-5">
+        <h1 class="logo mb-0">OurRecipes</h1>
       </div>
-    </footer>
-    <!--Footer-->
+      <div class="col-md-4 d-flex justify-content-end ms-5 w-50 h-50">
+        <img class="img-icon me-0 mt-4" src="./img/facebook.png" alt="Facebook" href="#">
+        <img class="img-icon me-0 mt-4" src="./img/twitter.png" alt="Twitter" href="#">
+        <img class="img-icon me-0 mt-4" src="./img/instagram.png" alt="Instagram" href="#">
+      </div>
+      <div class="col-md-4 text-center d-flex justify-content-between align-content-center">
+        <hr>
+        <p>2023. OurRecipes. Todos los derechos recervados</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--Footer-->
 
 
   </section>
 
-    <!-- VueJS -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <!-- VueJS -->
-    <!-- Axios - API recipes -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- custom events components -->
-    <script src="https://unpkg.com/mitt/dist/mitt.umd.js"></script>
-    <!--JS-->
-    <script src="./js/main.js"></script>
-    <script src="./js/components/RecipeCard.js"></script>
-    <script src="./js/components/Category.js"></script>
-    <!--JS-->
-    <!--monted-->
-    <script>
-      const mountedApp = app.mount("#app");
-    </script>
-    <!--Monted-->
+  <!-- VueJS -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <!-- VueJS -->
+  <!-- Axios - API recipes -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- custom events components -->
+  <script src="https://unpkg.com/mitt/dist/mitt.umd.js"></script>
+  <!--JS-->
+  <script src="./js/main.js"></script>
+  <script src="./js/components/RecipeCarousel.js"></script>
+  <script src="./js/components/RecipeCard.js"></script>
+  <script src="./js/components/RecipeDetails.js"></script>
+  <script src="./js/components/Category.js"></script>
+  <!--JS-->
+  <!--monted-->
+  <script>
+    const mountedApp = app.mount("#app");
+  </script>
+  <!--Monted-->
 
 </body>
 
