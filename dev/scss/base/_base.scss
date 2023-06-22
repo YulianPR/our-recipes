@@ -38,7 +38,7 @@ th{
 
 }
 tr{
-    @include mixins.set-font(variables.$ff, variables.$fw-regular, variables.$fs-med, variables.$clr-white);
+    @include mixins.set-font(variables.$ff, variables.$fw-regular, variables.$fs-xxsm, variables.$clr-white);
 
 }
 .logo{

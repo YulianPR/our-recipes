@@ -115,18 +115,6 @@
 
     <Section class="mb-5">
       <div id="carouselExampleCaptions" class="carousel slide">
-       <!-- 
-        <div class="carousel-indicators align-items-center">
-
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-
-        </div> 
-      -->
 
         <div  class="carousel-inner">
 
@@ -162,7 +150,8 @@
     <!--10/recetas-->
 
     <!--modal-->
-    <recipe-details></recipe-details>
+    <recipe-details v-for="(item, index) in recipes" :image="item.image" :category="item.category" :name="item.name" :description="item.instructions"
+    :time="item.time" :level="item.level" :likes="item.likes" :saves="item.saves" :portions="item.portions"></recipe-details>
     <!--modal-->
 
     <!--recetas-->
@@ -171,16 +160,16 @@
       <div v-for="(item, index) in recipes" class="col-md-4">
 
         <recipe-card :image="item.image" :category="item.category" :name="item.name" :description="item.instructions"
-          :time="item.time" :level="item.level" :likes="item.likes" :index="item.id" :saves="item.saves"
-          :index="item.id" :portions="item.portions"></recipe-card>
+          :time="item.time" :level="item.level" :likes="item.likes" :id="item.id" :saves="item.saves"
+          :index="index" :portions="item.portions" v-on:recipedetails="onClickRecipeDetails" v-on:recipelike="onClickRecipeLike"></recipe-card>
 
       </div>
     </section>
     <!--recetas-->
 
 
-<!--Footer-->
-<footer class="bg-white">
+   <!--Footer-->
+   <footer class="bg-white">
   <div class="container">
     <div class="row">
       <div class="col-md-4 d-flex align-items-center">
@@ -198,31 +187,31 @@
       </div>
     </div>
   </div>
-</footer>
-<!--Footer-->
+   </footer>
+   <!--Footer-->
 
 
   </section>
 
-  <!-- VueJS -->
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <!-- VueJS -->
-  <!-- Axios - API recipes -->
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <!-- custom events components -->
-  <script src="https://unpkg.com/mitt/dist/mitt.umd.js"></script>
-  <!--JS-->
-  <script src="./js/main.js"></script>
-  <script src="./js/components/RecipeCarousel.js"></script>
-  <script src="./js/components/RecipeCard.js"></script>
-  <script src="./js/components/RecipeDetails.js"></script>
-  <script src="./js/components/Category.js"></script>
-  <!--JS-->
-  <!--monted-->
-  <script>
+   <!-- VueJS -->
+   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+   <!-- VueJS -->
+   <!-- Axios - API recipes -->
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <!-- custom events components -->
+   <script src="https://unpkg.com/mitt/dist/mitt.umd.js"></script>
+   <!--JS-->
+   <script src="./js/main.js"></script>
+   <script src="./js/components/RecipeCarousel.js"></script>
+   <script src="./js/components/RecipeCard.js"></script>
+   <script src="./js/components/RecipeDetails.js"></script>
+   <script src="./js/components/Category.js"></script>
+   <!--JS-->
+   <!--monted-->
+   <script>
     const mountedApp = app.mount("#app");
-  </script>
-  <!--Monted-->
+   </script>
+   <!--Monted-->
 
 </body>
 

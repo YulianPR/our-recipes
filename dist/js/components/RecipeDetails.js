@@ -1,7 +1,9 @@
 app.component('recipe-details',{
+
     props:{
         image:{
             type: String,
+            default: "deefault image"
         },
         category:{
             type: String,
@@ -15,13 +17,17 @@ app.component('recipe-details',{
             type: String,
             default: "deefault description"
         },
+        occacion:{
+          type: String,
+          default: "deefault occacion"
+        },
         ingredients:{
             type: String,
-            default: "deefault description"
+            default: "deefault ingredients"
         },       
         instructions:{
             type: String,
-            default: "deefault description"
+            default: "deefault instructions"
         },       
         time:{
             type: String,
@@ -40,7 +46,6 @@ app.component('recipe-details',{
         }
     }, 
 
-
       template:
       /*html*/
       `<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -53,10 +58,10 @@ app.component('recipe-details',{
             </div>
             <div class="modal-body">
             <img class="d-block m-auto img-fluid" v-bind:src="image" alt="{{ image }}">
-              <p>{{description}}</p>
+              <p>Descripción: {{description}}</p>
               <p>Tiempo de preparación: 25 min</p>
               <p>Tiempo de cocción: 10 min</p>
-              <p>{{time}}</p>
+              <p>Tiempo total:{{time}}</p>
               <p>Porsiones: 1</p>
               <p>Complejidad: {{level}}</p>
               <p>Category: {{category}}</p>
@@ -66,14 +71,10 @@ app.component('recipe-details',{
               <p>{{ingredients}}</p>
               <p>{{instructions}}</p>
             </div>
-
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
             </div>
           </div>
         </div>
       </div>`
-
-    
-
   })

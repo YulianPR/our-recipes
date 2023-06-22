@@ -3,7 +3,7 @@ app.component('recipe-card',{
     props:{
         image:{
             type: String,
-            default: "deefault category"
+            default: "deefault image"
         },
         category:{
             type: String,
@@ -34,8 +34,8 @@ app.component('recipe-card',{
             default: 8
         },
         index:{
-            type: String,
-            default: "recipe id"
+            type: Number,
+            
         }
     },
 
@@ -77,10 +77,10 @@ app.component('recipe-card',{
       <h4 class="card-text text-center mt-0 mb-0 opacity-75">Porciones: {{portions}}</h4>
 
       <div class="d-flex justify-content-center">
-        <button class="btn btn-card m-4" v-on:click="onClickLike()">Votos {{likes}}</button>
-        <button class="btn-card m-4" v-on:click="onClickSave()">Guardadas {{saves}}</button>
+        <button class="btn-card m-4" v-on:click="onClickLike()">Votos {{likes}}</button>
+        <button class="btn-card m-4" v-on:click="onClickSave()">Guardar {{saves}}</button>
       </div>
-      <button class="btn btn-view" v-on:click="onClickViewRecipe(index)" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver la receta</button>
+      <button class="btn btn-view" v-on:click="onClickViewRecipe()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver receta</button>
     </div>
   </div>`
 })
